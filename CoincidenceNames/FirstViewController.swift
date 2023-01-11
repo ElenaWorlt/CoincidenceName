@@ -11,6 +11,7 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var nameLabelTF: UITextField!
     @IBOutlet weak var partnerLabelTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        

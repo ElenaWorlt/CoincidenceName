@@ -171,6 +171,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j10-tT-GUC"/>
+                    <connections>
+                        <outlet property="namesLabel" destination="0Tb-X9-YRx" id="z5P-YT-uY7"/>
+                        <outlet property="progressLabel" destination="9Yk-y6-sls" id="NQa-GU-5mK"/>
+                        <outlet property="resultInprocentLabel" destination="dof-xY-s1v" id="GPD-Oi-hIw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Etj-56-lBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
