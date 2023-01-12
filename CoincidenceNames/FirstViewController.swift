@@ -17,7 +17,17 @@ class FirstViewController: UIViewController {
        
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinationVC = segue.destination as? ResultViewController else { return}
+    
+        destinationVC.firstName = nameLabelTF.text
+        destinationVC.secondName = partnerLabelTF.text
+        
+    }
+    
+
     @IBAction func resultButton() {
+        performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
 }

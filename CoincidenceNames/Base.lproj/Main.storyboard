@@ -78,7 +78,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="resultButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPE-nG-kIm"/>
-                                    <segue destination="YXC-jX-Wy1" kind="show" id="BAU-bm-pjp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,6 +96,7 @@
                     <connections>
                         <outlet property="nameLabelTF" destination="15O-mD-B0w" id="orh-9B-7WE"/>
                         <outlet property="partnerLabelTF" destination="i4y-Gw-a46" id="XDt-QW-ii4"/>
+                        <segue destination="YXC-jX-Wy1" kind="show" identifier="goToResult" id="uQi-dh-SiD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -174,7 +174,7 @@
                     <connections>
                         <outlet property="namesLabel" destination="0Tb-X9-YRx" id="z5P-YT-uY7"/>
                         <outlet property="progressLabel" destination="9Yk-y6-sls" id="NQa-GU-5mK"/>
-                        <outlet property="resultInprocentLabel" destination="dof-xY-s1v" id="GPD-Oi-hIw"/>
+                        <outlet property="resultInProcentLabel" destination="dof-xY-s1v" id="GPD-Oi-hIw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Etj-56-lBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
