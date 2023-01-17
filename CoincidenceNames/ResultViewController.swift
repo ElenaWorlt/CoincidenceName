@@ -33,6 +33,9 @@ class ResultViewController: UIViewController {
         progressLabel.transform = progressLabel.transform.scaledBy(x: 1, y: 4)
     }
     
+    @IBAction func backButtonTapped() {
+        performSegue(withIdentifier: "unwindSegue", sender: nil)
+    }
     
     private func findValue(for name: String) -> Int {
         var count = 0
@@ -82,5 +85,7 @@ class ResultViewController: UIViewController {
         }
         return result
     }
+   
+    
     
 }

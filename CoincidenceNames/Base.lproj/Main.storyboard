@@ -48,12 +48,18 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15O-mD-B0w">
                                                 <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="srr-eZ-pZm"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-Gw-a46">
                                                 <rect key="frame" x="0.0" y="64.000000000000028" width="157.33333333333334" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Wpq-yP-ChE"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -153,6 +159,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButtonTapped" destination="YXC-jX-Wy1" eventType="touchUpInside" id="4r5-1j-zC8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D0X-2F-FdM"/>
@@ -175,9 +184,11 @@
                         <outlet property="namesLabel" destination="0Tb-X9-YRx" id="z5P-YT-uY7"/>
                         <outlet property="progressLabel" destination="t6F-8v-RuQ" id="wtj-yW-ypS"/>
                         <outlet property="resultInProcentLabel" destination="dof-xY-s1v" id="GPD-Oi-hIw"/>
+                        <segue destination="SqM-fK-aHZ" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToFVCWithSegue:" id="CSL-Y8-Ibj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Etj-56-lBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SqM-fK-aHZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="982" y="-28"/>
         </scene>
